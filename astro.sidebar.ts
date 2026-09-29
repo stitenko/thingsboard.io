@@ -371,7 +371,7 @@ const edgeInstallationItems = (prefix: string) => {
 		...(isPE
 			? []
 			: [{ label: 'Building from Sources', slug: `${prefix}/installation/building-from-source` }]),
-		{ label: 'Upgrade instructions', slug: `${prefix}/installation/upgrade-instructions` },
+		{ label: 'Upgrade Instructions', slug: `${prefix}/installation/upgrade-instructions` },
 	];
 };
 
@@ -454,7 +454,7 @@ const installationItems = (prefix: string) => {
 					},
 				]
 			: [
-					{ label: 'Upgrade instructions', slug: `${prefix}/installation/upgrade-instructions` },
+					{ label: 'Upgrade Instructions', slug: `${prefix}/installation/upgrade-instructions` },
 					`${prefix}/installation/register-community-grant`,
 				]),
 	];
