@@ -2,19 +2,18 @@ import DocLink from '@components/DocLink.astro';
 import ImageGallery from '@components/ImageGallery.astro';
 import { Aside } from '@astrojs/starlight/components';
 import { Products } from '@models/site.models';
-import { SOURCE_AVAILABLE_FROM_VER } from '@data/versions';
 
-Starting with ThingsBoard {SOURCE_AVAILABLE_FROM_VER}, Community Edition and Professional Edition are unified into a single ThingsBoard platform that requires a license key.
+Starting with ThingsBoard 4.4, Community Edition and Professional Edition are unified into a single ThingsBoard platform that requires a license key.
 
-Existing ThingsBoard Community Edition deployments can receive a **free perpetual license key** through the **[Community Grant Program](/community-grant-program/)**. The grant allows you to continue running your existing deployment after upgrading to ThingsBoard {SOURCE_AVAILABLE_FROM_VER}.
+Existing ThingsBoard Community Edition deployments can receive a **free perpetual license key** through the **[Community Grant Program](/community-grant-program/)**. The grant allows you to continue running your existing deployment after upgrading to ThingsBoard 4.4.
 
-Registration must be completed **before upgrading to ThingsBoard {SOURCE_AVAILABLE_FROM_VER}**. The registration process runs on your existing ThingsBoard 4.3 deployment and generates the license key that you will use during the upgrade.
+Registration must be completed **before upgrading to ThingsBoard 4.4**. The registration process runs on your existing ThingsBoard 4.3 deployment and generates the license key that you will use during the upgrade.
 
 <Aside type="caution" title="Important">
 Before registering, upgrade your deployment to the **latest ThingsBoard 4.3 LTS patch release**. Earlier versions cannot generate the deployment report required for registration. Follow the <DocLink product={Products.CE} path="installation/upgrade-instructions" target="_blank">Community Edition upgrade instructions</DocLink> if you are not there yet.
 </Aside>
 
-Registration does not modify your current deployment or activate ThingsBoard {SOURCE_AVAILABLE_FROM_VER}. Your ThingsBoard 4.3 installation continues to operate normally until you decide to upgrade.
+Registration does not modify your current deployment or activate ThingsBoard 4.4. Your ThingsBoard 4.3 installation continues to operate normally until you decide to upgrade.
 
 ## Register for a Community Grant
 
@@ -67,7 +66,7 @@ When the grant is ready, the Portal shows the granted scale (devices, production
 ]} />
 
 <Aside type="caution" title="Important">
-Keep the license key — you will need it to activate ThingsBoard {SOURCE_AVAILABLE_FROM_VER} during the upgrade.
+Keep the license key — you will need it to activate ThingsBoard 4.4 during the upgrade.
 </Aside>
 
 ### Step 5. Return to ThingsBoard
@@ -84,7 +83,7 @@ The **Version** card now shows **Community Grant registered**. Nothing else is r
   { src: '/src/assets/images/docs/installation/community-grant/community-grant-registered.png', alt: 'Version card on the Home page showing Community Grant registered', caption: 'Confirm the Community Grant registration on the Version card.' },
 ]} />
 
-<Aside type="tip" title="No Internet access?">
+<Aside type="tip" title="No internet access?">
 Register offline: on any connected machine, download the read-only reporting tool from the License Portal, run it against your deployment, and submit the encrypted report through the Portal.
 </Aside>
 
@@ -97,6 +96,6 @@ Registering a deployment:
 - does **not** change the licensing of your existing ThingsBoard 4.3 installation;
 - registers the deployment with the Community Grant Program;
 - creates a Community Grant for the registered deployment;
-- provides the license key required to activate ThingsBoard {SOURCE_AVAILABLE_FROM_VER} during the upgrade.
+- provides the license key required to activate ThingsBoard 4.4 during the upgrade.
 
-After registration, follow the <DocLink product={Products.PE} path="installation/upgrade-from-ce" target="_blank">ThingsBoard {SOURCE_AVAILABLE_FROM_VER} upgrade guide</DocLink> for your deployment and provide the Community Grant license key when requested.
+After registration, follow the <DocLink product={Products.PE} path="installation/upgrade-from-ce" target="_blank">ThingsBoard 4.4 upgrade guide</DocLink> for your deployment and provide the Community Grant license key when requested.
